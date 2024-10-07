@@ -1,4 +1,4 @@
-import imageasset from "../../assets/images/imageassets"
+import imageasset from "../../../assets/images/imageassets"
 
 const About3 = () => {
 	return (

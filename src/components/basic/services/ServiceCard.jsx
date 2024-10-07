@@ -7,7 +7,7 @@ const ServiceCard = ({ src, title, description }) => {
 			</div>
 			<div className="w-[50%] h-[100%] flex flex-col items-start justify-start gap-[15px]">
 				<p className="group-hover:text-[#1A225A] font-subheading text-[50px] font-bold leading-[1.2]">{title}</p>
-				<p className="group-hover:text-[#3749C0] group-hover:font-[500] text-[140%] font-[100]">{description}</p>
+				<p className="group-hover:text-[#3749C0] group-hover:font-[500] text-[140%] font-[100] hidden md:block ">{description}</p>
 			</div>
 		</div>
 	)

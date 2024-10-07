@@ -1,8 +1,9 @@
 import Service3 from "../../basic/services/Service3"
-import About1 from "../../about/About1";
-import About2 from "../../about/About2";
-import About3 from "../../about/About3";
-import About4 from "../../about/About4";
+import About1 from "../../basic/about/About1"
+import About2 from "../../basic/about/About2"
+import About3 from "../../basic/about/About3"
+import About4 from "../../basic/about/About4"
+
 
 const About = () => {
 	return (

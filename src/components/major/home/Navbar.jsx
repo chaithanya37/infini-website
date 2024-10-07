@@ -1,3 +1,4 @@
+import Menu from "@mui/icons-material/Menu";
 import imageasset from "../../../assets/images/imageassets"
 import { useState } from "react"
 
@@ -8,7 +9,7 @@ const navbar = ({ setAboutvisibility }) => {
 	return (
 		<div className="w-full h-[65px] px-[50px] flex flex-row items-center justify-between bg-[#0b021ca1] fixed z-[5] backdrop-blur-[10px]">
 			<img src={imageasset.logo1} className="h-[55px]" />
-			<div className="w-[500px] h-[50px] flex flex-row items-center justify-between relative text-[white]">
+			<div className="w-[500px] h-[50px] hidden md:flex flex-row items-center justify-between relative text-[white]">
 				<div className="border w-[125px] flex items-center justify-center h-[90%] rounded-[80px] border-[white] absolute z-[-1]"
 					style={{ transform: `translatex(${index * 125}px)`, transition: "0.3s" }}
 				>
@@ -53,6 +54,9 @@ const navbar = ({ setAboutvisibility }) => {
 				>
 					CONTACT
 				</div>
+			</div>
+			<div className="w-auto h-auto block md:hidden">
+				<Menu className="text-[white]" />
 			</div>
 
 		</div >
