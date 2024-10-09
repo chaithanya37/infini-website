@@ -1,82 +1,47 @@
-import imageasset from "../../../assets/images/imageassets"
-import { useState } from "react"
-import FeedbackForm from "../../basic/footer/FeedbackForm"
+import { Divider } from "@mui/material";
+import Footer1 from "../../basic/footer/Footer1";
+import Footer2 from "../../basic/footer/Footer2";
+import Footer3 from "../../basic/footer/Footer3";
+import Footer4 from "../../basic/footer/Footer4";
+import Footer5 from "../../basic/footer/Footer5";
+import Footer6 from "../../basic/footer/Footer6";
+import FooterHead from "../../basic/footer/FooterHead";
 
 
 const Footer = () => {
 
-	const [openStatus, setOpenStatus] = useState(false);
-
-	const handleClose = () => {
-		setOpenStatus(false);
-	}
-
-	const handleOpen = () => {
-		setOpenStatus(true);
-	}
-
 	return (
-		<div id="footer" className="w-[100%] min-h-[450px] border border-[black] bg-footer-linear relative px-[50px] pt-[90px] flex flex-row items-start justify-center">
-			<div className="absolute w-[85%] h-[100px] top-[-50px] translate-x-[-50%] left-[50%] rounded-[80px] border-[3px] border-[rgba(255,255,255,0.3)] flex flex-row items-center justify-around bg-footer-linear">
-				<p className="text-[white] text-[170%] font-bold">Ready To Get Started</p>
-				<p className="text-[white] text-[170%] font-bold">Contact Us Today</p>
-				<button className="text-[#0020FF] text-[140%] rounded-[80px] px-[25px] py-[5px] border bg-button-radial">Get Started</button>
-
-			</div>
-			<div className="w-[90%] min-h-10 flex flex-col items-center justify-between gap-[30px]">
+		<div id="footer" className="w-[100%] min-h-[20px] border border-[black] bg-footer-linear relative md:px-[50px] md:pt-[90px] px-[0px] pt-[20px] flex flex-row items-start justify-center md:rounded-tl-[40px] md:rounded-tr-[40px] rounded-tr-[20px] rounded-tl-[20px]">
+			<FooterHead />
+			<div className="w-[90%] min-h-10 hidden md:flex flex-col items-center justify-between gap-[30px]">
 				<div className="w-full min-h-[90px] flex flex-row items-start justify-between text-[white]">
-					<div className="w-[250px] h-[100%] flex flex-col items-start justify-start gap-[0px]">
-						<div className="w-[100%] h-auto flex flex-row items-start justify-between  translate-x-[-55px]">
-							<img src={imageasset.infinimove_logo} className="translate-y-[-20px]  translate-x-[15px]" />
-							<p className="font-bold text-[130%]">infiniMove</p>
-						</div>
-						<p>At InfiniMove, we create seamless software solutions that drive innovation and growth for businesses worldwide.</p>
-					</div>
-					<div className="w-auto h-[100%] flex flex-col items-start justify-start gap-[7px]">
-						<p className="text-[130%] font-bold mb-[10px]">Company</p>
-						<a href="/">About Us</a>
-						<a href="/">Careers</a>
-						<a href="/" >Terms</a>
-						<a href="/" >Contact Us</a>
-					</div>
-					<div className="w-auto h-[100%] flex flex-col items-start justify-start gap-[7px]">
-						<p className="text-[130%] font-bold mb-[10px]">Use Cases</p>
-						<a href="/" >UI/UX design</a>
-						<a href="/" >Mobile app building</a>
-						<a href="/" >Website building</a>
-						<a href="/">Digital Marketing</a>
-					</div>
-					<div className="w-[400px] h-[100%] flex flex-col items-center justify-start gap-[30px]">
-						<p className="text-[130%] font-bold">We Await For Valuable Feedback</p>
-						<button
-							onClick={handleOpen}
-							className="font-bold text-[white] text-[130%] px-[20px] py-[7px] bg-[#6C48F4] rounded-[10px]"
-						>
-							Send Your Feedback
-						</button>
-						<FeedbackForm open={openStatus} onClose={handleClose} />
-					</div>
+					<Footer1 />
+					<Footer2 />
+					<Footer3 />
+					<Footer4 />
 				</div>
-				<div className="w-full min-h-[60px] flex flex-row items-center justify-between px-[15px]">
-					<div className="min-w-[30%] h-fit flex flex-row items-center justify-between gap-[20px] text-[white]">
-						<p>&copy; infiniMove 2024</p>
-						<a href="/">Privacy policy</a>
-						<a href="/">Terms of use</a>
-					</div>
-					<div className="min-w-[30%] h-[100%] flex flex-row items-center justify-between gap-[40px] text-[white] rounded-[22px] border-[2px] border-[rgba(255,255,255,0.3)] px-[20px] py-[8px]">
-						<a className="text-[150%] font-bold">Get in Touch</a>
-						<div className="w-fit flex flex-row items-center justify-between gap-[10px]">
-							<a href="https://www.facebook.com/infini.move/
-" target="_blank"><img src={imageasset.Facebook} /></a>
-							<a href="https://www.linkedin.com/groups/14501329" target="_blank"><img src={imageasset.Linkedin} /></a>
-							<a href="https://www.instagram.com/invites/contact/?igsh=w27x5g1q5ch3&utm_content=vom7ob5" target="_blank"><img src={imageasset.Instagram} /></a>
-							<a href="https://x.com/infinimove18076" target="_blank"><img src={imageasset.Twitter} /></a>
-						</div>
-					</div>
+				<div className="w-full min-h-[60px] flex flex-row items-center justify-between px-[15px] mb-[30px]">
+					<Footer5 />
+					<Footer6 />
 				</div>
-
 			</div>
+			<div className="w-[95%] h-auto flex md:hidden flex-col items-center justify-between gap-[15px] text-[white]">
+				<div className="w-[100%] h-auto flex flex-row items-start justify-between gap-[5px]">
+					<div className="w-[43%] min-h-auto flex flex-row items-start justify-between flex-wrap gap-[10px]">
+						<Footer1 />
+						<Footer2 />
+						<Footer3 />
+					</div>
+					<div className="w-[1px] h-[35dvw] border border-[rgba(255,255,255,0.7)] ">
 
+					</div>
+					<div className="w-[43%] min-h-auto flex flex-col items-center justify-start gap-[2dvw]">
+						<Footer4 />
+						<Footer6 />
+					</div>
+				</div>
+				<Footer5 />
+			</div>
 		</div>
 	)
 }
