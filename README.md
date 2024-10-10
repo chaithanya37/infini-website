@@ -1,2 +1,2 @@
-# infinimove_frontend.
+# infinimove_frontend
 
