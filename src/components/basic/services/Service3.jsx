@@ -58,10 +58,10 @@ const Service3 = () => {
 
 					</Swiper>
 
-					<div className='absolute left-0 h-[100%] md:w-[120px] border w-[17dvw] bg-left-feedback-linear z-[1] top-0 rounded-tr-[100%] rounded-br-[100%] rounded-tl-[15px] rounded-bl-[15px] backdrop-blur-[4px] ' >
+					<div className='absolute left-0 h-[100%] md:w-[120px] w-[17dvw] bg-left-feedback-linear z-[1] top-0 rounded-tr-[100%] rounded-br-[100%] rounded-tl-[15px] rounded-bl-[15px] backdrop-blur-[4px] ' >
 					</div>
 
-					<div className='absolute right-0 h-[100%] md:w-[120px] border w-[17dvw] bg-right-feedback-linear z-[1] top-0 rounded-tl-[100%] rounded-bl-[100%] rounded-tr-[15%] rounded-br-[15%] backdrop-blur-[4px]' >
+					<div className='absolute right-0 h-[100%] md:w-[120px] w-[17dvw] bg-right-feedback-linear z-[1] top-0 rounded-tl-[100%] rounded-bl-[100%] rounded-tr-[15%] rounded-br-[15%] backdrop-blur-[4px]' >
 					</div>
 
 				</div>
