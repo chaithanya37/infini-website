@@ -68,7 +68,7 @@ const navbar = ({ setAboutvisibility }) => {
 			<div className="w-auto h-auto block md:hidden">
 				<Menu className="text-[white]" onClick={handleOpen} />
 			</div>
-			<DialogNavbar open={openStatus} onClose={handleClose} />
+			<DialogNavbar open={openStatus} onClose={handleClose} setIndex={setIndex} setAboutvisibility={setAboutvisibility} />
 
 		</div >
 	)
