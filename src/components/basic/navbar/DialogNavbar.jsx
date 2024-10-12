@@ -8,7 +8,6 @@ const DialogNavbar = ({ open, onClose, setIndex, setAboutvisibility }) => {
             onClose={onClose}
             sx={{
                 backgroundColor: "transparent",
-                backdropFilter: "Brightness(100%) contrast(100%)",
                 "& .MuiDialog-container": {
                     display: "flex",
                     flexDirection: "row",
@@ -20,12 +19,13 @@ const DialogNavbar = ({ open, onClose, setIndex, setAboutvisibility }) => {
                     borderRadius: "10px",
                     width: "auto",
                     height: "auto",
-                    backgroundColor: "white"
+                    background: "linear-gradient(to right,rgba(26, 34, 90, 0.8),rgba(197, 204, 255, 0.6))",
+                    backdropFilter: "blur(0px)",
                 }
             }}
         >
-            <div className="w-[200px] h-auto border rounded-[10px] py-[10px]">
-                <div className="w-[100%] h-auto py-[5px] flex items-center justify-center cursor-pointer font-bold"
+            <div className="w-[200px] h-auto rounded-[10px] py-[10px]">
+                <div className="w-[100%] h-auto py-[5px] flex items-center justify-center cursor-pointer font-bold text-white"
                     key={0}
                     onClick={() => {
                         setIndex(0);
@@ -38,7 +38,7 @@ const DialogNavbar = ({ open, onClose, setIndex, setAboutvisibility }) => {
                 >
                     HOME
                 </div>
-                <div className="w-[100%] h-auto py-[5px] flex items-center justify-center cursor-pointer font-bold"
+                <div className="w-[100%] h-auto py-[5px] flex items-center justify-center cursor-pointer font-bold text-white"
                     key={1}
                     onClick={() => {
                         setIndex(1);
@@ -52,7 +52,7 @@ const DialogNavbar = ({ open, onClose, setIndex, setAboutvisibility }) => {
                 >
                     SERVICES
                 </div>
-                <div className="w-[100%] h-auto py-[5px] flex items-center justify-center cursor-pointer font-bold"
+                <div className="w-[100%] h-auto py-[5px] flex items-center justify-center cursor-pointer font-bold text-white"
                     key={2}
                     onClick={() => {
                         setIndex(2);
@@ -65,7 +65,7 @@ const DialogNavbar = ({ open, onClose, setIndex, setAboutvisibility }) => {
                 >
                     ABOUT
                 </div>
-                <div className="w-[100%] h-auto py-[5px] flex items-center justify-center cursor-pointer font-bold"
+                <div className="w-[100%] h-auto py-[5px] flex items-center justify-center cursor-pointer font-bold text-white"
                     key={3}
                     onClick={() => {
                         setIndex(3);
