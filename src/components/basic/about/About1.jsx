@@ -3,7 +3,7 @@ import imageasset from "../../../assets/images/imageassets"
 
 const About1 = () => {
 	return (
-		<div className="w-[100%] min-h-[200px] flex flex-col items-center justify-start gap-[20px] pt-[50px] px-[50px]">
+		<div className="w-[100%] min-h-[200px] flex flex-col items-center justify-start md:gap-[20px] gap-[1dvw] pt-[50px] md:px-[50px] px-[10px]">
 			<p className="font-heading text-[65px]">About Us</p>
 			<div className="w-[100%] min-h-[300px] flex flex-row items-center justify-around">
 				<div className="w-[45%] h-[100%] rounded-[10px] bg-service-border-linear p-[1px]">
@@ -31,7 +31,8 @@ const About1 = () => {
 			</div>
 			<br />
 			<br />
-			<p className="text-[190%] leading-[1.1] text-center font-heading font-[200]">At InfiniMove, we are passionate about transforming ideas into cutting-edge digital realities. With over two years of experience, we specialize in delivering innovative and functional solutions that make a lasting impact. Our team is driven by a shared vision of creating digital experiences that not only meet but exceed expectations.</p>
+			<p className="text-[190%] leading-[1.1] hidden md:block text-center font-heading font-[200]">At InfiniMove, we are passionate about transforming ideas into cutting-edge digital realities. With over two years of experience, we specialize in delivering innovative and functional solutions that make a lasting impact. Our team is driven by a shared vision of creating digital experiences that not only meet but exceed expectations.</p>
+			<p className="text-[5dvw] block md:hidden text-center font-heading ">Get your dream project in your budget in quick time !</p>
 			<br />
 			<hr className="bg-divider-linear h-[2px] border-none w-screen" />
 		</div>
