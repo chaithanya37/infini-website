@@ -13,7 +13,7 @@ const Service3 = () => {
 	const phone = useMediaQuery({ query: "(max-width:768px)" })
 	return (
 		<>
-			<div className="md:w-[60%] w-[93%] h-auto m-auto md:mt-[100px] mt-[50px] flex flex-col items-center justify-start md:gap-[50px] gap-[20px]">
+			<div className="md:w-[60%] w-[93%] h-auto m-auto md:mt-[100px] mt-[10dvw] flex flex-col items-center justify-start md:gap-[50px] gap-[20px]">
 				<p className="md:text-[60px] text-[7dvw] font-heading">What Our Clients Say!</p>
 				<div className="md:w-[80%] w-[100%] h-auto relative rounded-[15px]">
 					<Swiper
