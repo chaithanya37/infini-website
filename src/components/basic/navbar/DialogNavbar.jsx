@@ -23,14 +23,14 @@ const DialogNavbar = ({ open, onClose, index, setIndex, setAboutvisibility }) =>
                 },
                 "& .MuiDialog-paper": {
                     borderRadius: "10px",
-                    width: "auto",
+                    width: "min(95%,200px)",
                     height: "auto",
                     background: "rgba(26, 34, 90, 0.8)",
                     backdropFilter: "blur(5px)",
                 }
             }}
         >
-            <div className="w-[200px] h-auto rounded-[10px] py-[10px] px-[10px]">
+            <div className="w-[100%] h-auto rounded-[10px] py-[10px] px-[10px] border border-[rgba(255,255,255,0.2)]">
                 <div className="w-[100%] h-auto flex justify-end">
                     <Close sx={{ color: "white", transform: "scale(0.8)" }} onClick={onClose} />
                 </div>

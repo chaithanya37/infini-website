@@ -69,7 +69,7 @@ const FeedbackForm = ({ open, onClose }) => {
 					<div className="w-[100%] h-[100%] bg-[#161C44] rounded-[9px] flex flex-col items-start justify-start md:px-[15px] md:py-[15px] px-[4dvw] py-[4dvw] gap-[10px]">
 						{/* <label className="text-[white] text-[120%]">FEEDBACK:</label> */}
 						<textarea
-							className="bg-transparent text-[white] outline-none w-full px-[5px] md:text-[105%] text-[4devw] min-h-[100%] max-h-[100%] rounded-[5px] "
+							className="bg-transparent text-[white] outline-none w-full px-[5px] md:text-[105%] text-[3dvw] min-h-[100%] max-h-[100%] rounded-[5px] "
 							name="feedback"
 							placeholder="Enter your feedback here ..."
 							value={formik.values.feedback}
