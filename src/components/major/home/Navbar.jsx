@@ -17,7 +17,7 @@ const navbar = ({ setAboutvisibility }) => {
 	}
 
 	return (
-		<div className="w-full md:h-[65px] h-[50px] md:px-[50px] px-[20px] flex flex-row items-center justify-between bg-[#0b021ca1] fixed z-[5] backdrop-blur-[10px]">
+		<div className="w-full md:h-[65px] h-[15dvw] md:px-[50px] px-[20px] flex flex-row items-center justify-between bg-[#0b021ca1] fixed z-[5] backdrop-blur-[10px]">
 			<img src={imageasset.logo1} className="md:h-[55px] h-[90%]" />
 			<div className="w-[500px] h-[50px] hidden md:flex flex-row items-center justify-between relative text-[white]">
 				<div className="border w-[125px] flex items-center justify-center h-[90%] rounded-[80px] border-[white] absolute z-[-1]"
@@ -65,8 +65,8 @@ const navbar = ({ setAboutvisibility }) => {
 					CONTACT
 				</div>
 			</div>
-			<div className="w-auto h-auto block md:hidden">
-				<Menu className="text-[white]" onClick={handleOpen} />
+			<div className="w-[10dvw] h-[63%] md:hidden flex items-center justify-center">
+				<Menu className="text-[white]" sx={{ width: "100%", height: "100%" }} onClick={handleOpen} />
 			</div>
 			<DialogNavbar open={openStatus} onClose={handleClose} index={index} setIndex={setIndex} setAboutvisibility={setAboutvisibility} />
 
