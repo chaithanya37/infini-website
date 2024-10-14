@@ -1,7 +1,7 @@
 
 const ErrorAlert = ({ children }) => {
 	return (
-		<p className="text-[#ff2525] text-[90%] font-bold">{children}</p>
+		<p className="text-[#ff2525] text-[90%] font-bold w-full ">{children}</p>
 	)
 }
 
