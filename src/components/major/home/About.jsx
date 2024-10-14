@@ -7,7 +7,7 @@ import About4 from "../../basic/about/About4"
 
 const About = () => {
 	return (
-		<div id="about" className="w-full min-h-[1500px] pt-[70px] text-[white] pb-[150px]" >
+		<div id="about" className="w-full md:min-h-[1500px] min-h-[10px] pt-[70px] text-[white] md:pb-[150px] mb-[30dvw]" >
 			<About1 />
 			<About2 />
 			<About3 />

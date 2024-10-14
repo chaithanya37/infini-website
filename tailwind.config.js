@@ -14,7 +14,8 @@ export default {
         "right-feedback-linear": "linear-gradient(to right,#001FFF25 29%,#0014A525 60%,#0B021C25 100%)",
         "left-feedback-linear": "linear-gradient(to right,#0B021C25 29%,#0014A525 88%,#001FFF25 100%)",
         "divider-linear": "linear-gradient(to right,#1A225A,#FFFFFF,#1A225A)",
-        "about-box-linear": "linear-gradient(to bottom,#8322E350,#8B76A055,#EDEDED37)"
+        "about-box-linear": "linear-gradient(to bottom,#8322E350,#8B76A055,#EDEDED37)",
+        "about-box-linear1": "linear-gradient(to right,rgba(26, 34, 90, 0.43),rgba(55, 73, 192, 0.43))",
 
       },
       fontFamily: {

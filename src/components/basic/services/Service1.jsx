@@ -5,7 +5,7 @@ const Service1 = () => {
 	return (
 		<div className="w-[100%] md:min-h-[550px] flex flex-col md:flex-row items-center justify-start md:justify-center pl-[0px]">
 			<p className="text-[8dvw] font-heading font-[600] block md:hidden">Welcome to InfiniMove</p>
-			<img src={imageasset.website1} className="block md:hidden w-[70dvw]" />
+			<img src={imageasset.website1} className="mt-[50px] animate-[bounce_3s_ease-in-out_infinite] block md:hidden w-[70dvw]" />
 			<div className="md:w-[40%] w-[90%] min-h-[100px]">
 				<p className="text-[65px] font-heading font-[600] hidden md:block">Welcome to InfiniMove</p><br />
 				<p className="md:text-[120%] text-[3dvw] font-[600] text-center md:text-left">If you're looking for cutting-edge software solutions and innovative mobile app development, you’ve come to the right place. At Infinimove, we turn your ideas into reality with technology that drives results.</p><br />
