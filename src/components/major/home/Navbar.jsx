@@ -29,7 +29,9 @@ const navbar = ({ setAboutvisibility }) => {
 					onClick={() => {
 						setIndex(0);
 						setAboutvisibility(false);
-						document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+						setTimeout(() => {
+							document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+						}, 500);
 					}}
 				>
 					HOME
@@ -39,7 +41,9 @@ const navbar = ({ setAboutvisibility }) => {
 					onClick={() => {
 						setIndex(1);
 						setAboutvisibility(false);
-						document.getElementById("services").scrollIntoView({ behavior: "smooth" });
+						setTimeout(() => {
+							document.getElementById("services").scrollIntoView({ behavior: "smooth" });
+						}, 500);
 					}}
 
 				>
@@ -50,7 +54,9 @@ const navbar = ({ setAboutvisibility }) => {
 					onClick={() => {
 						setIndex(2);
 						setAboutvisibility(true);
-						document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+						setTimeout(() => {
+							document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+						}, 500);
 					}}
 				>
 					ABOUT
@@ -59,7 +65,9 @@ const navbar = ({ setAboutvisibility }) => {
 					key={3}
 					onClick={() => {
 						setIndex(3);
-						document.getElementById("footer").scrollIntoView({ behavior: "smooth" });
+						setTimeout(() => {
+							document.getElementById("footer").scrollIntoView({ behavior: "smooth" });
+						}, 500);
 					}}
 				>
 					CONTACT
