@@ -2,7 +2,7 @@
 
 const Grid = ({ children }) => {
     return (
-        <div className="w-auto h-auto" style={{ backgroundImage: "url(/Grid.png)" }}>
+        <div className="w-auto h-auto relative z-[1]" style={{ backgroundImage: "url(/Grid.png)" }}>
             {children}
         </div>
     )
