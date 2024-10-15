@@ -70,12 +70,13 @@ const BackgroundAnimation = () => {
 
 export default BackgroundAnimation;
  */
-import { Canvas } from '@react-three/fiber';
-import { Html } from '@react-three/drei';
+/*import { Canvas } from '@react-three/fiber';
+import { Html } from '@react-three/drei';*/
 
 const BackgroundAnimation = () => {
 	return (
-		<Canvas style={{ position: 'absolute', top: 0, left: 0, zIndex: 0, width: '100%', height: '100%' }} className=''>
+		<>
+			{/*<Canvas style={{ position: 'absolute', top: 0, left: 0, zIndex: 0, width: '100%', height: '100%' }} className=''>
 			<ambientLight />
 			<pointLight position={[0, 0, 0]} />
 
@@ -88,7 +89,8 @@ const BackgroundAnimation = () => {
 					</div>
 				</div>
 			</Html>
-		</Canvas>
+		</Canvas>*/}
+		</>
 	);
 };
 
