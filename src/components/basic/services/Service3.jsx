@@ -29,7 +29,7 @@ const Service3 = () => {
 						slidesPerView={
 							(phone ? 2 : 2)
 						}
-						initialSlide={0}
+						initialSlide={1}
 						style={{ width: '100%', margin: '0 auto', borderRadius: "15px" }}
 					>
 						<SwiperSlide>

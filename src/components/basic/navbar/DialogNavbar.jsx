@@ -1,11 +1,17 @@
 import { Dialog } from "@mui/material"
+import { Close } from "@mui/icons-material";
 
 
-const DialogNavbar = ({ open, onClose, setIndex, setAboutvisibility }) => {
+const DialogNavbar = ({ open, onClose, index, setIndex, setAboutvisibility }) => {
     return (
         <Dialog
             open={open}
             onClose={onClose}
+            slotProps={{
+                backdrop: {
+                    style: { backgroundColor: 'transparent' }
+                }
+            }}
             sx={{
                 backgroundColor: "transparent",
                 "& .MuiDialog-container": {
@@ -17,15 +23,18 @@ const DialogNavbar = ({ open, onClose, setIndex, setAboutvisibility }) => {
                 },
                 "& .MuiDialog-paper": {
                     borderRadius: "10px",
-                    width: "auto",
+                    width: "min(95%,200px)",
                     height: "auto",
-                    background: "linear-gradient(to right,rgba(26, 34, 90, 0.8),rgba(197, 204, 255, 0.6))",
-                    backdropFilter: "blur(0px)",
+                    background: "rgba(26, 34, 90, 0.8)",
+                    backdropFilter: "blur(5px)",
                 }
             }}
         >
-            <div className="w-[200px] h-auto rounded-[10px] py-[10px]">
-                <div className="w-[100%] h-auto py-[5px] flex items-center justify-center cursor-pointer font-bold text-white"
+            <div className="w-[100%] h-auto rounded-[10px] py-[10px] px-[10px] border border-[rgba(255,255,255,0.2)]">
+                <div className="w-[100%] h-auto flex justify-end">
+                    <Close sx={{ color: "white", transform: "scale(0.8)" }} onClick={onClose} />
+                </div>
+                <div className="w-[100%] h-auto py-[5px] flex items-center justify-center cursor-pointer font-heading text-white"
                     key={0}
                     onClick={() => {
                         setIndex(0);
@@ -36,9 +45,9 @@ const DialogNavbar = ({ open, onClose, setIndex, setAboutvisibility }) => {
                         onClose();
                     }}
                 >
-                    HOME
+                    <span style={{ textDecoration: index == 0 ? "underline" : "none" }}>Home</span>
                 </div>
-                <div className="w-[100%] h-auto py-[5px] flex items-center justify-center cursor-pointer font-bold text-white"
+                <div className="w-[100%] h-auto py-[5px] flex items-center justify-center cursor-pointer font-heading text-white"
                     key={1}
                     onClick={() => {
                         setIndex(1);
@@ -50,9 +59,9 @@ const DialogNavbar = ({ open, onClose, setIndex, setAboutvisibility }) => {
                     }}
 
                 >
-                    SERVICES
+                    <span style={{ textDecoration: index == 1 ? "underline" : "none" }}>Services</span>
                 </div>
-                <div className="w-[100%] h-auto py-[5px] flex items-center justify-center cursor-pointer font-bold text-white"
+                <div className="w-[100%] h-auto py-[5px] flex items-center justify-center cursor-pointer font-heading text-white"
                     key={2}
                     onClick={() => {
                         setIndex(2);
@@ -63,9 +72,9 @@ const DialogNavbar = ({ open, onClose, setIndex, setAboutvisibility }) => {
                         onClose();
                     }}
                 >
-                    ABOUT
+                    <span style={{ textDecoration: index == 2 ? "underline" : "none" }}>About</span>
                 </div>
-                <div className="w-[100%] h-auto py-[5px] flex items-center justify-center cursor-pointer font-bold text-white"
+                <div className="w-[100%] h-auto py-[5px] flex items-center justify-center cursor-pointer font-heading text-white"
                     key={3}
                     onClick={() => {
                         setIndex(3);
@@ -75,7 +84,7 @@ const DialogNavbar = ({ open, onClose, setIndex, setAboutvisibility }) => {
                         onClose();
                     }}
                 >
-                    CONTACT
+                    <span style={{ textDecoration: index == 3 ? "underline" : "none" }}>Contact</span>
                 </div>
 
             </div>
