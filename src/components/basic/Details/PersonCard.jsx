@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PersonDetailsModal from './PersonDetailsModal';
-import teamData from './teamData';
+import teamData from './TeamData';
 
 const PersonCard = ({ name, imageUrl }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
