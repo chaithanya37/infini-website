@@ -2,7 +2,7 @@ import React from 'react';
 import Grid from '../background/Grid';
 import GradientAnimation from '../background/GradientAnimation';
 import PersonCard from './PersonCard';
-import teamData from './TeamData';
+// import teamData from './TeamData';
 
 const ConnectorLine = ({ className }) => (
   <div className={`absolute border-4 border-white-700 ${className}`} />
