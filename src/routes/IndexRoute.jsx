@@ -6,8 +6,8 @@ const IndexRoute = () => {
 	return (
 		<Routes>
 			<Route path="/" element={<Home />} />
+			<Route path="/details" element={<Details/>}/>
 			<Route path="*" element={<NotFound />} />
-			<Route path="Details" element={<Details/>}/>
 		</Routes>
 	)
 }

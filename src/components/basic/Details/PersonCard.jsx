@@ -8,7 +8,7 @@ const PersonCard = ({ name, imageUrl }) => {
 
   return (
     <>
-      <div 
+      <div
         className="relative flex flex-col items-center cursor-pointer"
         onClick={() => setIsModalOpen(true)}
       >

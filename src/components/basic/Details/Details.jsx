@@ -10,27 +10,27 @@ const ConnectorLine = ({ className }) => (
 
 const OrgChart = () => {
   const personImages = {
-    'S Md Ishrath': 'src/assets/images/team/ishrath.jpg',
-    'C Samsundar': 'src/assets/images/team/sam.jpg',
-    'N. Pawan': 'src/assets/images/team/pawan.jpg',
-    'R Gnana Prakash': 'src/assets/images/team/gnana.jpg',
-    'B Krishna Arjun': 'src/assets/images/team/blank.png',
-    'G Sudarshan': 'src/assets/images/team/sudharshan.jpg',
-    'Koteswar Mani': 'src/assets/images/team/koti.jpg',
-    'Sainath': 'src/assets/images/team/sainath.jpg',
-    'Teja Kumar': 'src/assets/images/team/tej .jpg',
-    'Nani': 'src/assets/images/team/nani.jpg',
-    'G Ganesh': 'src/assets/images/team/gani.jpg',
-    'Chaitanya': 'src/assets/images/team/chaithu.jpg',
-    'B Ganesh': 'src/assets/images/team/ganesh.jpg',
-    'B Srinu': 'src/assets/images/team/srinu.jpg',
-    'V Phanindra': 'src/assets/images/team/phani.jpg',
-    'Y Santi Kumar': 'src/assets/images/team/santhi.jpg',
-    'G Jayanth Kumar': 'src/assets/images/team/jayanth.jpg'
+    'S Md Ishrath': '/images/team/ishrath.jpg',
+    'C Samsundar': '/images/team/sam.jpg',
+    'N. Pawan': '/images/team/pawan.jpg',
+    'R Gnana Prakash': '/images/team/gnana.jpg',
+    'B Krishna Arjun': '/images/team/blank.png',
+    'G Sudarshan': '/images/team/sudharshan.jpg',
+    'Koteswar Mani': '/images/team/koti.jpg',
+    'Sainath': '/images/team/sainath.jpg',
+    'Teja Kumar': '/images/team/tej .jpg',
+    'Nani': '/images/team/nani.jpg',
+    'G Ganesh': '/images/team/gani.jpg',
+    'Chaitanya': '/images/team/chaithu.jpg',
+    'B Ganesh': '/images/team/ganesh.jpg',
+    'B Srinu': '/images/team/srinu.jpg',
+    'V Phanindra': '/images/team/phani.jpg',
+    'Y Santi Kumar': '/images/team/santhi.jpg',
+    'G Jayanth Kumar': '/images/team/jayanth.jpg'
   };
 
   return (
-    <div 
+    <div
       className="min-h-screen bg-[#1f0f5e] bg-cover bg-center bg-no-repeat relative"
       style={{
         backgroundImage: 'url(src/assets/images/grid.png)',
@@ -50,7 +50,7 @@ const OrgChart = () => {
                   <div className="space-y-4 flex flex-col items-start mt-4">
                     <PersonCard name="S Md Ishrath" imageUrl={personImages['S Md Ishrath']} />
                     <PersonCard name="C Samsundar" imageUrl={personImages['C Samsundar']} />
-                    <PersonCard name="N. Pawan" imageUrl={personImages['N. Pawan']}/> 
+                    <PersonCard name="N. Pawan" imageUrl={personImages['N. Pawan']} />
                   </div>
                 </div>
 
@@ -76,8 +76,8 @@ const OrgChart = () => {
               {/* Center Logo */}
               <div className="absolute left-1/2 transform -translate-x-1/2 -mt-40">
                 <div className="w-32 h-32 rounded-full bg-blue-500/10 border-4 border-white-400 flex items-center justify-center overflow-hidden">
-                  <img 
-                    src="src/assets/images/team/logo.jpg" 
+                  <img
+                    src="/images/team/logo.jpg"
                     alt="Company Logo"
                     className="w-50 h-50 object-contain"
                     onError={(e) => {
