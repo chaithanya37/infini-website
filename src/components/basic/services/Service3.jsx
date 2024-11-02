@@ -32,21 +32,31 @@ const Service3 = () => {
 						initialSlide={1}
 						style={{ width: '100%', margin: '0 auto', borderRadius: "15px" }}
 					>
-						<SwiperSlide>
+						{/* <SwiperSlide>
 							<SwiperCard img={imageasset.Avatar} name="Alex Turner" profession={"Data Scientist @ NexaCorp"} feedback={"“The teams insights transformed how we approach our data. Fast, efficient, and incredibly helpful!”"} />
-						</SwiperSlide>
+						</SwiperSlide> */}
 						<SwiperSlide>
-							<SwiperCard img={imageasset.Avatar} name="Alex Turner" profession={"Data Scientist @ NexaCorp"} feedback={"“The teams insights transformed how we approach our data. Fast, efficient, and incredibly helpful!”"} />
-						</SwiperSlide>
-						<SwiperSlide>
-							<SwiperCard img={imageasset.Avatar} name="Alex Turner" profession={"Data Scientist @ NexaCorp"} feedback={"“The teams insights transformed how we approach our data. Fast, efficient, and incredibly helpful!”"} />
-						</SwiperSlide>
-						<SwiperSlide>
+  <SwiperCard 
+    img={imageasset.Avatar1} 
+    name="Ram Mohan" 
+    profession={"Founder @Abhiruchi Restaurant"} 
+    feedback={"“The team did an outstanding job with our college website. It’s intuitive, visually appealing, and has significantly improved our user engagement.”"} 
+  />
+</SwiperSlide>
+<SwiperSlide>
+  <SwiperCard 
+    img={imageasset.Avatar2} 
+    name="Prakash" 
+    profession={"CEO @ Hasini Enterprise"} 
+    feedback={"“Our e-commerce website was delivered with exceptional quality and efficiency. The user experience is top-notch, and we’ve seen an increase in customer satisfaction.”"} 
+  />
+</SwiperSlide>
+						{/* <SwiperSlide>
 							<SwiperCard img={imageasset.Avatar} name="Alex Turner" profession={"Data Scientist @ NexaCorp"} feedback={"“The teams insights transformed how we approach our data. Fast, efficient, and incredibly helpful!”"} />
 						</SwiperSlide>
 						<SwiperSlide>
 							<SwiperCard img={imageasset.Avatar} name="Alex Turner" profession={"Data Scientist @ NexaCorp"} feedback={"“The team’s insights transformed how we approach our data. Fast, efficient, and incredibly helpful!”"} />
-						</SwiperSlide>
+						</SwiperSlide> */}
 
 						<div className="nextArrowNav border z-[10] w-[35px] h-[35px] bg-[white] absolute top-[50%] right-[18dvw] md:right-[20%] translate-y-[-50%] flex items-center justify-center rounded-[50%] cursor-pointer">
 							<ArrowForwardIos sx={{ color: "black" }} />

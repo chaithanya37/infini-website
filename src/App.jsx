@@ -1,4 +1,5 @@
 import IndexRoute from "./routes/IndexRoute"
+import './App.css'
 
 const App = () => {
 	return (
