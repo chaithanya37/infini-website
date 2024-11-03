@@ -6,11 +6,11 @@ const PersonDetailsModal = ({ isOpen, onClose, person }) => {
 
   return (
     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50">
-      <div 
+      <div
         className="bg-[#070829] border border-blue-400 rounded-lg max-w-md w-full mx-4 relative"
         onClick={(e) => e.stopPropagation()}
       >
-        <button 
+        <button
           onClick={onClose}
           className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors"
         >
@@ -48,7 +48,7 @@ const PersonDetailsModal = ({ isOpen, onClose, person }) => {
               <h4 className="text-sm font-medium text-gray-400">Skills</h4>
               <div className="flex flex-wrap gap-2 mt-1">
                 {person.skills?.map((skill, index) => (
-                  <span 
+                  <span
                     key={index}
                     className="px-2 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm"
                   >
