@@ -32,7 +32,7 @@ const DialogNavbar = ({ open, onClose, index, setIndex, setAboutvisibility }) =>
         >
             <div className="w-[100%] h-auto rounded-[10px] py-[10px] px-[10px] border border-[rgba(255,255,255,0.2)]">
                 <div className="w-[100%] h-auto flex justify-end">
-                    <Close sx={{ color: "white", transform: "scale(0.8)" }} onClick={onClose} />
+                    <Close className="text-[white]" style={{ height: "5dvw", width: "5dvw" }} onClick={onClose} />
                 </div>
                 <div className="w-[100%] h-auto py-[5px] flex items-center justify-center cursor-pointer font-heading text-white text-[5dvw] px-[10dvw]"
                     key={0}

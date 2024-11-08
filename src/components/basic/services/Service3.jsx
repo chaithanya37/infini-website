@@ -29,7 +29,7 @@ const Service3 = () => {
 						slidesPerView={
 							(phone ? 2 : 2)
 						}
-						initialSlide={1}
+						initialSlide={0}
 						style={{ width: '100%', margin: '0 auto', borderRadius: "15px" }}
 					>
 						{/* <SwiperSlide>
@@ -58,11 +58,11 @@ const Service3 = () => {
 							<SwiperCard img={imageasset.Avatar} name="Alex Turner" profession={"Data Scientist @ NexaCorp"} feedback={"“The team’s insights transformed how we approach our data. Fast, efficient, and incredibly helpful!”"} />
 						</SwiperSlide> */}
 
-						<div className="nextArrowNav border z-[10] w-[35px] h-[35px] bg-[white] absolute top-[50%] right-[18dvw] md:right-[20%] translate-y-[-50%] flex items-center justify-center rounded-[50%] cursor-pointer">
+						<div className="nextArrowNav z-[10] w-[7dvw] h-[7dvw] md:w-[35px] md:h-[35px] bg-[white] absolute top-[50%] right-[18dvw] md:right-[20%] translate-y-[-50%] flex items-center justify-center rounded-[50%] cursor-pointer">
 							<ArrowForwardIos sx={{ color: "black" }} />
 						</div>
 
-						<div className="prevArrowNav border z-[10] w-[35px] h-[35px] bg-[white] absolute top-[50%] left-[18dvw] md:left-[20%] translate-y-[-50%] flex items-center justify-center rounded-[50%] cursor-pointer">
+						<div className="prevArrowNav border z-[10] w-[7dvw] h-[7dvw] md:w-[35px] md:h-[35px] bg-[white] absolute top-[50%] left-[18dvw] md:left-[20%] translate-y-[-50%] flex items-center justify-center rounded-[50%] cursor-pointer">
 							<ArrowBackIos sx={{ color: "black" }} />
 						</div>
 
