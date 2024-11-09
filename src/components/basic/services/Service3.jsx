@@ -10,7 +10,7 @@ import ArrowForwardIos from '@mui/icons-material/ArrowForwardIos';
 import { useMediaQuery } from 'react-responsive';
 
 const Service3 = () => {
-	const phone = useMediaQuery({ query: "(max-width:768px)" })
+	const phone = useMediaQuery({ query: "(max-width:1220px)" })
 	return (
 		<>
 			<div className="md:w-[60%] w-[93%] h-auto m-auto md:mt-[100px] mt-[10dvw] flex flex-col items-center justify-start md:gap-[50px] gap-[20px]">
@@ -29,28 +29,28 @@ const Service3 = () => {
 						slidesPerView={
 							(phone ? 2 : 2)
 						}
-						initialSlide={1}
+						initialSlide={0}
 						style={{ width: '100%', margin: '0 auto', borderRadius: "15px" }}
 					>
 						{/* <SwiperSlide>
 							<SwiperCard img={imageasset.Avatar} name="Alex Turner" profession={"Data Scientist @ NexaCorp"} feedback={"“The teams insights transformed how we approach our data. Fast, efficient, and incredibly helpful!”"} />
 						</SwiperSlide> */}
 						<SwiperSlide>
-  <SwiperCard 
-    img={imageasset.Avatar1} 
-    name="Ram Mohan" 
-    profession={"Founder @Abhiruchi Restaurant"} 
-    feedback={"“The team did an outstanding job with our college website. It’s intuitive, visually appealing, and has significantly improved our user engagement.”"} 
-  />
-</SwiperSlide>
-<SwiperSlide>
-  <SwiperCard 
-    img={imageasset.Avatar2} 
-    name="Prakash" 
-    profession={"CEO @ Hasini Enterprise"} 
-    feedback={"“Our e-commerce website was delivered with exceptional quality and efficiency. The user experience is top-notch, and we’ve seen an increase in customer satisfaction.”"} 
-  />
-</SwiperSlide>
+							<SwiperCard
+								img={imageasset.Avatar1}
+								name="Ram Mohan"
+								profession={"Founder @Abhiruchi Restaurant"}
+								feedback={"“The team did an outstanding job with our college website. It’s intuitive, visually appealing, and has significantly improved our user engagement.”"}
+							/>
+						</SwiperSlide>
+						<SwiperSlide>
+							<SwiperCard
+								img={imageasset.Avatar2}
+								name="Prakash"
+								profession={"CEO @ Hasini Enterprise"}
+								feedback={"“Our e-commerce website was delivered with exceptional quality and efficiency. The user experience is top-notch, and we’ve seen an increase in customer satisfaction.”"}
+							/>
+						</SwiperSlide>
 						{/* <SwiperSlide>
 							<SwiperCard img={imageasset.Avatar} name="Alex Turner" profession={"Data Scientist @ NexaCorp"} feedback={"“The teams insights transformed how we approach our data. Fast, efficient, and incredibly helpful!”"} />
 						</SwiperSlide>
@@ -58,11 +58,11 @@ const Service3 = () => {
 							<SwiperCard img={imageasset.Avatar} name="Alex Turner" profession={"Data Scientist @ NexaCorp"} feedback={"“The team’s insights transformed how we approach our data. Fast, efficient, and incredibly helpful!”"} />
 						</SwiperSlide> */}
 
-						<div className="nextArrowNav border z-[10] w-[35px] h-[35px] bg-[white] absolute top-[50%] right-[18dvw] md:right-[20%] translate-y-[-50%] flex items-center justify-center rounded-[50%] cursor-pointer">
+						<div className="nextArrowNav z-[10] w-[7dvw] h-[7dvw] md:w-[35px] md:h-[35px] bg-[white] absolute top-[50%] right-[18dvw] md:right-[20%] translate-y-[-50%] flex items-center justify-center rounded-[50%] cursor-pointer">
 							<ArrowForwardIos sx={{ color: "black" }} />
 						</div>
 
-						<div className="prevArrowNav border z-[10] w-[35px] h-[35px] bg-[white] absolute top-[50%] left-[18dvw] md:left-[20%] translate-y-[-50%] flex items-center justify-center rounded-[50%] cursor-pointer">
+						<div className="prevArrowNav border z-[10] w-[7dvw] h-[7dvw] md:w-[35px] md:h-[35px] bg-[white] absolute top-[50%] left-[18dvw] md:left-[20%] translate-y-[-50%] flex items-center justify-center rounded-[50%] cursor-pointer">
 							<ArrowBackIos sx={{ color: "black" }} />
 						</div>
 

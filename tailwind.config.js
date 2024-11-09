@@ -18,6 +18,9 @@ export default {
         "about-box-linear1": "linear-gradient(to right,rgba(26, 34, 90, 0.43),rgba(55, 73, 192, 0.43))",
 
       },
+      screens: {
+        md: "1220px",
+      },
       fontFamily: {
         heading: ["heading", "sans-serif"],
         subheading: ["subheading", "sans-serif"],
