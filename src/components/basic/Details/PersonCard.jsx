@@ -3,7 +3,7 @@ import PersonDetailsModal from './PersonDetailsModal';
 import TeamData from './TeamData';
 const PersonCard = ({ name, imageUrl }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const personDetails = teamData[name] || {};
+  const personDetails = TeamData[name] || {};
 
   return (
     <>
